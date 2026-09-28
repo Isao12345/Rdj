@@ -8,7 +8,7 @@ Description: GridMap representation for the 7x7 competition arena.
 """
 
 from typing import Tuple, List, Set, FrozenSet, Optional, Dict, Iterable
-from . import config
+from .. import config
 
 
 class GridMap:

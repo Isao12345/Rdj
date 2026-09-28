@@ -9,11 +9,11 @@ Description: Unit test suite verifying all modular components:
 
 import unittest
 from robomaster_round2.config import get_motion_vector, TILE_SIZE_M
-from robomaster_round2.pid_controller import PIDController, ChassisHeadingPID, calculate_angle_error
-from robomaster_round2.grid_map import GridMap
-from robomaster_round2.pathfinder import PathFinder
-from robomaster_round2.target_sequencer import TargetSequencer
-from robomaster_round2.chassis_driver import SimulatedChassisDriver
+from robomaster_round2.robot.pid_controller import PIDController, ChassisHeadingPID, calculate_angle_error
+from robomaster_round2.navigation.grid_map import GridMap
+from robomaster_round2.navigation.pathfinder import PathFinder
+from robomaster_round2.mission.target_sequence import TargetSequencer
+from robomaster_round2.robot.chassis_driver import SimulatedChassisDriver
 
 
 class TestRoboMasterModularNavigation(unittest.TestCase):
